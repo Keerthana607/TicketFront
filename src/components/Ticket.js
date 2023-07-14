@@ -59,7 +59,7 @@ class Ticket extends Component {
 
     axios({
       method: 'post',
-      url: 'tickets/addTickets',
+      url: 'https://backend-0flu.onrender.com/tickets/addTickets',
       data: formData,
       headers: {'Content-Type': 'multipart/form-data' }
       })
