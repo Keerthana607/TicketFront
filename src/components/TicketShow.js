@@ -28,7 +28,7 @@ class ShowTickets extends Component {
 
   getTicket = test => {
     return axios
-      .get('tickets/getTicketAll', {
+      .get('https://backend-0flu.onrender.com/tickets/getTicketAll', {
         
       })
       .then(response => {
@@ -134,7 +134,7 @@ class ShowTickets extends Component {
 
   changeStatus (id,status) {
     return axios
-      .put('tickets/changeStatus', {
+      .put('https://backend-0flu.onrender.com/tickets/changeStatus', {
         id,
         status
         
@@ -152,7 +152,7 @@ class ShowTickets extends Component {
   } 
   statusFilter (status) {
     return axios
-      .post('tickets/filterStatus', {
+      .post('https://backend-0flu.onrender.com/tickets/filterStatus', {
         status
       })
       .then(response => {
@@ -173,7 +173,7 @@ class ShowTickets extends Component {
 
   addMessage (id,messages) {
     return axios
-      .post('tickets/addMessages', {
+      .post('https://backend-0flu.onrender.com/tickets/addMessages', {
         id,messages
       })
       .then(response => {
